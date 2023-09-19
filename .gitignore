@@ -2,3 +2,4 @@ node_modules
 output
 src/logs
 src/config.*
+.DS_Store
