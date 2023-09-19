@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "ESNext",
+        "moduleResolution": "node",
+        "sourceMap": false,
+        "outDir": "./output",
+        // add Bun type definitions
+        "types": [
+            "bun-types"
+        ],
+        "paths": {
+            "@src/*": [
+                "./src/*"
+            ],
+            "@lib/*": [
+                "./src/lib/*"
+            ],
+            "@handlers/*": [
+                "./src/lib/handlers/*"
+            ],
+            "@events/*": [
+                "./src/events/*"
+            ],
+            "@commands/*": [
+                "./src/commands/*"
+            ],
+        }
+    },
+    "include": [
+        "./src/**/*.ts",
+    ],
+    "exclude": [
+        "./deprecated/**/*.ts",
+        "./templates/**/*.ts"
+    ],
+    "lib": [
+        "es2015"
+    ],
+}
